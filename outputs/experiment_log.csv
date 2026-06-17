@@ -1,0 +1,4 @@
+experiment_id,model,features,cv_auc,oof_auc,public_score,private_score,submission_file,notes
+exp001,LightGBM GPU baseline FE,"row stats + all-test count/unique + rank",0.904448,0.904448,0.90025,0.89797,outputs/submission_lgbm_gpu_best.csv,"GPU LightGBM first version; weaker Kaggle private score"
+exp002,LightGBM GPU magic real-test FE,"real-test-aware count/unique + rank + row stats",0.903792,0.903792,0.90438,0.90202,outputs/submission_lgbm_magic_real_gpu.csv,"Best version; detects 100000 real and 100000 synthetic test rows"
+exp003,Blend 20 best 80 magic,"weighted blend of exp001 and exp002",0.904010,0.904010,0.90361,0.90127,outputs/submission_blend_gpu_best_magic_w80.csv,"Blend did not improve private score"

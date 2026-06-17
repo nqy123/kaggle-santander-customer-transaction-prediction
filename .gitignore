@@ -1,0 +1,21 @@
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Kaggle raw data
+santander-customer-transaction-prediction/
+*.zip
+
+# Local temporary files
+*.log
+outputs/leaderboard/
+
+# Keep final reproducible outputs
+!outputs/
+!outputs/submission_lgbm_magic_real_gpu.csv
+!outputs/oof_lgbm_magic_real_gpu.csv
+!outputs/pred_lgbm_magic_real_gpu.csv
+!outputs/lgbm_magic_real_gpu_summary.json
+!outputs/experiment_log.csv
+!outputs/best_result_summary.csv

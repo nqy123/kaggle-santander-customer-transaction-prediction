@@ -1,0 +1,68 @@
+{
+  "mode": "lgbm_magic_real_gpu",
+  "lightgbm_version": "4.6.0",
+  "python": "3.13.0 | packaged by conda-forge | (main, Nov 27 2024, 19:03:49) [MSC v.1942 64 bit (AMD64)]",
+  "rows": 200000,
+  "n_features": 813,
+  "real_test_rows": 100000,
+  "synthetic_test_rows": 100000,
+  "oof_auc": 0.9037918823062986,
+  "fold_scores": [
+    {
+      "fold": 1,
+      "auc": 0.9046840810394534,
+      "best_iteration": 6996,
+      "device": "gpu"
+    },
+    {
+      "fold": 2,
+      "auc": 0.905540930655814,
+      "best_iteration": 7000,
+      "device": "gpu"
+    },
+    {
+      "fold": 3,
+      "auc": 0.8986927369821267,
+      "best_iteration": 7000,
+      "device": "gpu"
+    },
+    {
+      "fold": 4,
+      "auc": 0.9039683254101918,
+      "best_iteration": 7000,
+      "device": "gpu"
+    },
+    {
+      "fold": 5,
+      "auc": 0.9060786603392156,
+      "best_iteration": 6997,
+      "device": "gpu"
+    }
+  ],
+  "params": {
+    "objective": "binary",
+    "metric": "auc",
+    "boosting_type": "gbdt",
+    "n_estimators": 7000,
+    "learning_rate": 0.008,
+    "num_leaves": 13,
+    "max_depth": -1,
+    "min_child_samples": 60,
+    "subsample": 0.85,
+    "subsample_freq": 1,
+    "colsample_bytree": 0.1,
+    "reg_alpha": 1.5,
+    "reg_lambda": 6.0,
+    "random_state": 42,
+    "n_jobs": -1,
+    "verbose": 1,
+    "device_type": "gpu",
+    "device": "gpu",
+    "gpu_platform_id": 1,
+    "gpu_device_id": 0,
+    "max_bin": 255
+  },
+  "gpu_platform_id": 1,
+  "gpu_device_id": 0,
+  "notes": "使用 Santander real/synthetic test 识别构造频次特征；LightGBM 指定 NVIDIA OpenCL GPU，不回退 CPU。"
+}

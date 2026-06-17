@@ -1,0 +1,2 @@
+competition,best_submission,public_score,private_score,oof_auc,rank_estimate,notes
+santander-customer-transaction-prediction,outputs/submission_lgbm_magic_real_gpu.csv,0.90438,0.90202,0.903792,"approx top 4% public leaderboard snapshot","Best kept version; GPU LightGBM with real/synthetic test detection"
